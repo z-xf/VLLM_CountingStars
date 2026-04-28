@@ -15,7 +15,7 @@ A mini-project and tutorial demonstrating how to fine-tune **Vision Large Langua
 Here is an example demonstrating exactly what the VLLM is trained to learn.
 
 **Input Image & User Prompt:**
-*(A synthetically generated image showing 5 randomly sized, colored stars)*
+*(A synthetically generated image showing randomly sized, colored stars)*
 
 ![example_image](./assets/train_00002.png)
 
@@ -45,12 +45,16 @@ Look at the image and answer the following questions:
 ## 🛠️ Tutorial & Workflow
 
 ### 1. Environment Setup
-The project runs within a conda environment, relying heavily on PyTorch, Accelerate, Unsloth, and TRL.
+The project runs within a conda environment, relying heavily on:
+- PyTorch, 
+- Unsloth,
+- TRL
 
 I strongly recommend downloading and compiling TRL from [hugging face rtl installation](https://huggingface.co/docs/trl/installation) instead of installing it via pip. 
 
 ```bash
 # Example environment activation
+conda create -n vllm_py311 python=3.11
 conda activate vllm_py311
 ```
 
