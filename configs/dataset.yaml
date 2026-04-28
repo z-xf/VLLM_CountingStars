@@ -1,0 +1,42 @@
+seed: 42
+image_size: [256, 256]
+colors:
+  - "red"
+  - "blue"
+  - "green"
+  - "yellow"
+  - "purple"
+  - "orange"
+sizes:
+  small: [8, 14]
+  large: [20, 30]
+distractor_shapes:
+  - "circle"
+  - "square"
+  - "triangle"
+  - "diamond"
+levels:
+  easy:
+    objects_min: 4
+    objects_max: 6
+    star_ratio_min: 0.70
+    star_ratio_max: 0.80
+    max_distractor_types: 2
+    share_color: False
+    share_size: False
+  medium:
+    objects_min: 7
+    objects_max: 8
+    star_ratio_min: 0.40
+    star_ratio_max: 0.60
+    max_distractor_types: 2
+    share_color: True
+    share_size: True
+  hard:
+    objects_min: 8
+    objects_max: 12
+    star_ratio_min: 0.30
+    star_ratio_max: 0.50
+    max_distractor_types: 4
+    share_color: True
+    share_size: True
